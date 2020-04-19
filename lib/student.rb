@@ -57,4 +57,8 @@ class Student
    create_stud
  end
 
+ def update(student)
+   binding/pry
+ end
+
 end
