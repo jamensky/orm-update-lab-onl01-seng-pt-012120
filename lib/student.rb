@@ -50,7 +50,7 @@ class Student
  end
 
  def self.find_by_name(name)
-   sql = 'SELECT name FROM students WHERE name = ?'
+   sql = 'SELECT * FROM students WHERE name = ?'
    binding.pry
 
    student = DB[:conn].execute(sql, name)
