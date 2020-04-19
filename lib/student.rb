@@ -53,7 +53,7 @@ class Student
    sql = 'SELECT * FROM students WHERE name = ?'
    binding.pry
 
-   student = DB[:conn].execute(sql, name)
+   student = DB[:conn].execute(sql, name)[0]
  end
 
 end
