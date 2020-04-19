@@ -55,8 +55,6 @@ class Student
    student = DB[:conn].execute(sql, name)[0]
    create_stud = self.new_from_db(student)
    create_stud
-  # binding.pry
-
  end
 
 end
