@@ -53,6 +53,7 @@ class Student
    sql = 'SELECT * FROM students WHERE name = ?'
 
    student = DB[:conn].execute(sql, name)[0]
+   self.new_from_db(student)
    binding.pry
 
  end
