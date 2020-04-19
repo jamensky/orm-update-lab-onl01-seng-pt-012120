@@ -57,9 +57,9 @@ class Student
    create_stud
  end
 
- def update(student)
+ def update
    sql = 'UPDATE students SET name = ?, grade = ? WHERE id = ?'
-   #DB[:conn].execute(sql, )
+   DB[:conn].execute(sql, )
    binding.pry
  end
 
